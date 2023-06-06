@@ -1,0 +1,289 @@
+/* Css reset  */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  font-family: "Poppins", sans-serif;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* reset css end  */
+
+.min-height {
+  min-height: calc(100vh - 166px);
+}
+
+/* landing page css */
+.hero-banner-height {
+  height: calc(100vh - 262px);
+}
+.landing-bg {
+  background-image: url(../images/landing-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.collection-text {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+button.slick-arrow.slick-prev {
+  display: none !important;
+}
+.heroSliderArrows {
+  justify-content: flex-end;
+  gap: 10px;
+  display: flex;
+  align-items: center;
+}
+.collectionSliderArrowPrev {
+  position: absolute;
+  right: 90px;
+  bottom: -50px;
+  transform: rotate(180deg);
+}
+.collectionSliderArrow {
+  position: absolute;
+  bottom: -50px;
+  right: 50px;
+}
+.collection-text {
+  width: 290px;
+  border-radius: 0px 0px 25px 24px;
+}
+.collectionSliderArrowPrev img,
+.collectionSliderArrow img {
+  width: 30px;
+  cursor: pointer;
+}
+.collection-bar-slider .slick-next {
+  display: none !important;
+}
+footer.main-footer {
+  background: #1e1e1e;
+  margin-top: 50px;
+}
+.footer-left img {
+  width: 120px;
+  top: -50px;
+}
+.collection-banner {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background: #111111;
+}
+
+.collection-main {
+  background-color: #1e1e1e;
+}
+.top-collection,
+.all-collections {
+  background-color: #111111;
+}
+.collection-search input {
+  background: transparent;
+  color: #4d4d4d;
+  border: 1px solid #4d4d4d;
+}
+.collection-search input::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #4d4d4d;
+  opacity: 1; /* Firefox */
+}
+
+.collection-search input:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #4d4d4d;
+}
+
+.collection-search input::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #4d4d4d;
+}
+.collection-search span {
+  position: absolute;
+  top: 13px;
+  left: 20px;
+  width: 16px;
+}
+.collection-search input::placeholder {
+  font-size: 13px;
+}
+.header {
+  background: #1e1e1e;
+}
+.social-icons svg:hover,
+.footer-social-icons svg:hover {
+  fill: #ff752e;
+}
+.footer-social-icons svg {
+  fill: #8b8b8b;
+}
+.collection-bar-slider .collection-bar:nth-child(odd)::before {
+  content: url(../images/star.png);
+  position: absolute;
+  left: 0;
+  top: 5px;
+}
+
+/* select */
+.sadsad .css-1s2u09g-control{
+  background: transparent;
+  border: 0;
+}
+.sadsad .css-1pahdxg-control:hover{
+  border-color: transparent;
+}
+.sadsad .css-1okebmr-indicatorSeparator{
+  display: none;
+}
+
+.sadsad .css-2613qy-menu{
+  background: transparent !important;
+}
+
+
+@media (max-width: 1024px) {
+  .collection-content > img {
+    width: 80%;
+  }
+  .hero-banner-height {
+    height: auto;
+    padding-block: 40px;
+  }
+  .table-resposnive {
+    width: 100%;
+    overflow-x: scroll;
+  }
+}
+@media (max-width: 476px) {
+  .collection-text {
+    width: 400px;
+  }
+}
+@media (max-width: 640px) {
+  .footer-left img {
+    display: none;
+  }
+}
+@media (max-width: 576px) {
+  .collection-text {
+    width: 443px;
+  }
+}
